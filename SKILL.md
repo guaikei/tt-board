@@ -6,6 +6,11 @@ name: tt-board
 description: "TikTok作品榜单数据源（只读）：关键词搜视频、博主作品、视频评论，输出 JSON，不登录不发布。触发词：TikTok、tiktok、抖音国际版、TikTok搜索、TikTok评论、TikTok博主。用户要查 TikTok 视频、评论、爆款选题、竞品监控、KOL 筛选或评论舆情时使用；抖音、小红书、快手、B站、微博、公众号不要用本技能。"
 license: MIT
 version: 1.1.3
+display_name: "TikTok作品榜单｜爆款排行·高赞清单·热门博主"
+display_name_en: "TikTok Rankings"
+description_zh: "TikTok作品榜单数据源（只读）：关键词搜索TikTok视频（相关度/最多点赞排序，近 1 日/7 日/1 月/3 月/6 月时间窗筛选）、博主作品列表（主页链接、@用户名或 sec_uid，最新/最热排序）、视频评论抓取（视频链接或纯数字作品ID）；全部以结构化 JSON 输出供 AI 直接排序对比。不登录、不发布、不点赞、不评论，仅处理 TikTok 公开数据。按量单次最多 1 万条；包月搜索/作品最多 30、评论最多 40，超限返回 PLAN_LIMIT（退出码 1），禁止同参重试。零第三方 npm 依赖，stdout 纯 JSON、退出码语义明确，可直接被脚本或 AI Agent 编排。适用于爆款排行、高赞作品清单、热门博主盘点、竞品监控与评论舆情。"
+description_en: "Read-only TikTok ranking data source: keyword video search with relevance/most-liked sorting and time-window filters (1 day/7 days/1 month/3 months/6 months), creator video lists via profile link, @username, or sec_uid with latest/hottest sorting, and video comment mining via video link or numeric work id. All results are structured JSON ready for direct AI comparison. No login, publishing, liking, or commenting; only public TikTok data is processed. Pay-per-use runs cap at 10,000 items; monthly plans cap searches and creator videos at 30 and comments at 40, with PLAN_LIMIT (exit code 1) on overage — never retry with the same arguments. Zero third-party npm dependencies; stdout is pure JSON with clear exit codes for scripting or AI Agent orchestration. Ideal for hit rankings, top-liked lists, popular creator reviews, competitor monitoring, and comment sentiment."
+author: "新郑市怪奇信息技术工作室"
 metadata:
   openclaw:
     emoji: "🎵"
